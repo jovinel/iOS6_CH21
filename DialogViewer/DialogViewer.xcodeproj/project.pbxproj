@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4757FA8018571828006B33D3 /* BIDHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4757FA7F18571828006B33D3 /* BIDHeaderCell.m */; };
 		47D1E62A185714340051234E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D1E629185714340051234E /* UIKit.framework */; };
 		47D1E62C185714340051234E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D1E62B185714340051234E /* Foundation.framework */; };
 		47D1E62E185714340051234E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D1E62D185714340051234E /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 		47D1E650185714340051234E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D1E62B185714340051234E /* Foundation.framework */; };
 		47D1E658185714340051234E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47D1E656185714340051234E /* InfoPlist.strings */; };
 		47D1E65B185714340051234E /* DialogViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D1E65A185714340051234E /* DialogViewerTests.m */; };
+		47D1E666185715000051234E /* BIDContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D1E665185715000051234E /* BIDContentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4757FA7E18571828006B33D3 /* BIDHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDHeaderCell.h; sourceTree = "<group>"; };
+		4757FA7F18571828006B33D3 /* BIDHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDHeaderCell.m; sourceTree = "<group>"; };
 		47D1E625185714340051234E /* DialogViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialogViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D1E629185714340051234E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		47D1E62B185714340051234E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +62,8 @@
 		47D1E657185714340051234E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		47D1E659185714340051234E /* DialogViewerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogViewerTests.h; sourceTree = "<group>"; };
 		47D1E65A185714340051234E /* DialogViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewerTests.m; sourceTree = "<group>"; };
+		47D1E664185715000051234E /* BIDContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDContentCell.h; sourceTree = "<group>"; };
+		47D1E665185715000051234E /* BIDContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDContentCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				47D1E641185714340051234E /* BIDViewController.h */,
 				47D1E642185714340051234E /* BIDViewController.m */,
 				47D1E644185714340051234E /* BIDViewController.xib */,
+				47D1E664185715000051234E /* BIDContentCell.h */,
+				47D1E665185715000051234E /* BIDContentCell.m */,
+				4757FA7E18571828006B33D3 /* BIDHeaderCell.h */,
+				4757FA7F18571828006B33D3 /* BIDHeaderCell.m */,
 				47D1E630185714340051234E /* Supporting Files */,
 			);
 			path = DialogViewer;
@@ -274,6 +284,8 @@
 				47D1E636185714340051234E /* main.m in Sources */,
 				47D1E63A185714340051234E /* BIDAppDelegate.m in Sources */,
 				47D1E643185714340051234E /* BIDViewController.m in Sources */,
+				47D1E666185715000051234E /* BIDContentCell.m in Sources */,
+				4757FA8018571828006B33D3 /* BIDHeaderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +460,7 @@
 				47D1E660185714340051234E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D1E661185714340051234E /* Build configuration list for PBXNativeTarget "DialogViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +469,7 @@
 				47D1E663185714340051234E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
