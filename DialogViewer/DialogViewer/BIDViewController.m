@@ -49,6 +49,10 @@
     
     [self.collectionView registerClass:[BIDContentCell class] forCellWithReuseIdentifier:@"CONTENT"];
     self.collectionView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    
+    UICollectionViewLayout *layout = self.collectionView.collectionViewLayout;
+    UICollectionViewFlowLayout *flow = (UICollectionViewFlowLayout *)layout;
+    flow.sectionInset = UIEdgeInsetsMake(10, 20, 30, 20);
 }
 
 - (NSArray *)wordsInSection:(NSInteger)section {
@@ -72,6 +76,15 @@
     BIDContentCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"CONTENT" forIndexPath:indexPath];
     cell.text = words[indexPath.row];
     return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSArray *words = [self wordsInSection:indexPath.section];
+    CGSize size = [BIDContentCell sizeForContentString:words[indexPath.row]];
+    return size;
 }
 
 - (void)didReceiveMemoryWarning
